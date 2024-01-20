@@ -1,38 +1,225 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body{
+  font-family: 'Poppins';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header{
+  height: 20vh;
+  background-color: #E9E9E9;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 100px 0px 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo-name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex:1;
+  height: 100%;
+}
+
+.logo{
+  width: 60px;
+  height: 100%;
+}
+
+.name{
+  width: 200px;
+  height: 100%;
+  margin: 0 10px;
+}
+
+.search-container{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex: 2;
+}
+
+.search-container input{
+  flex: 1;
+  height: 35px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  background-color: white;
+  outline: none;
+  padding: 0;
+}
+
+.search-container button{
+  width: 5%;
+  height: 35px;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  background-color: white;
+  background-image: url('./images/lupaicon1\ 1.png');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 50%;
+  cursor: pointer;
+}
+
+.usuario{
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  flex:1;  
+}
+
+.usuario button{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.usuario button span{
+  margin: 0 15px;
+  font-family: 'Poppins';
+}
+
+.options{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex: 0.8;
+  height: 100%;
+}
+
+.options button{
+  margin: 0 15px;
+  height: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.options div img{
+  width: 100%;
+}
+
+header nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+header nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  font-size: 14px;
+}
+
+header nav li{
+  text-decoration: none;
+  list-style: none;
+  margin: 0 40px;
+}
+
+header nav li a{
+  text-decoration: none;
+  color: black;   
+}
+
+footer{
+  margin: 100px 0 0 0;
+  padding: 0 300px;
+  color: #333333;
+  background-color: #E9E9E9;
+}
+
+footer section{
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0 ;
+}
+
+footer ul li{
+  list-style: none;
+  margin: 7px 0px;
+  cursor: pointer;
+}
+
+footer ul{
+  margin: 0;
+  padding: 0;
+}
+
+.social ul{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.social li{
+  margin-right: 15px;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  padding: 5px 130px;
+}
+
+.content img{
+  height: 43px;
+  margin-right: 20px;
+}
+
+.produtos-container{
+  margin: 70px 0;
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+.produtos-container .seta{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.produtos-container .wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 3;
+}
+
+.cards{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 350px;
+  flex: 1;
+  margin: 0 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.cards img{
+  border-radius: 10px;
+  width: 100%
+}
+.cards span{
+  margin: 15px 0 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.collection-container{
+  width: 100%;
+}
+
+.collection-container img{
+  width: 100%;
 }
